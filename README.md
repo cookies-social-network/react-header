@@ -1,8 +1,24 @@
-# React + Vite
+Для работы с отдельным микрофронтендом нужно **локально** нужно:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```bash
+pnpm i --frozen-lockfile
+pnpm dev
+```
 
-Currently, two official plugins are available:
+Для того чтобы заставить микрофронтенд работать на **host’е** нужно: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+pnpm build
+pnpm preview
+```
+
+После того как все микрофронты запустятся нужно будет сделать следующее:
+
+```bash
+Для локальной разработки:
+pnpm dev
+
+Для prod:
+pnpm build
+pnpm preview
+```
