@@ -34,6 +34,10 @@ export default defineConfig(({ mode }) => {
     preview: {
       port: parseInt(env.VITE_PORT),
     },
+    test: {
+      globals: true,
+      environment: 'happy-dom',
+    },
     build: {
       modulePreload: false,
       target: 'esnext',
